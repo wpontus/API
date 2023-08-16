@@ -1,5 +1,5 @@
 cls
-#Show me the abilities of a pokemon
+#Goal: Show me the abilities of a pokemon
 $Pokemonname = "Bulbasaur"
 
 
