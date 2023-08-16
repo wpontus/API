@@ -14,6 +14,10 @@ $url = $url_base + $url_endpoint
 $response = Invoke-RestMethod -uri $url -Method Get -ContentType "application/json" -headers $header -Body $body
 
 #Show the result
-$response | ConvertTo-Json -Depth 3
+#$response #| ConvertTo-Json -Depth 3
 
-$response.moves
+#$response.moves
+
+#Get-Content $response | ConvertFrom-Json
+
+ $response.moves |Select-Object -ExpandProperty move | select name
