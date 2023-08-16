@@ -1,6 +1,6 @@
 cls
 #Goal: Show me the abilities of a pokemon
-$Pokemonname = "ditto"
+$Pokemonname = "bulbasaur"
 
 
 #Make sure to replace the URL values as it makes sense to match your scenario"
@@ -11,10 +11,9 @@ $url = $url_base + $url_endpoint
 
 
 #Gather the information from API
-$response = Invoke-RestMethod -uri $url -Method Get -ContentType "application/json" #-headers $header -Body $body
+$response = Invoke-RestMethod -uri $url -Method Get -ContentType "application/json" -headers $header -Body $body
 
 #Show the result
 $response | ConvertTo-Json -Depth 3
 
-#$response.results | select move
-
+$response.moves
