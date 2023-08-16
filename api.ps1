@@ -1,1 +1,0 @@
-https://www.reddit.com/r/PowerShell/comments/plosfc/quick_intro_to_rest_api_calls/
