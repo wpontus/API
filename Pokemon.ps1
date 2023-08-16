@@ -2,7 +2,7 @@ function Get-PokemonMoves {
     param (
         $Pokemonname
     )
-    #Make sure to replace the URL values as it makes sense to match your scenario"
+    #The pokemon API
     $url_base = "https://pokeapi.co"
     $url_endpoint = "/api/v2/pokemon/$Pokemonname/"
     $url = $url_base + $url_endpoint
